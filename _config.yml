@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Joomlashack Development
-logo: /assets/images/2019-jslogo_circle.png
+#logo: /assets/images/2019-jslogo_circle.png
 
 # Build settings
 remote_theme: pmarsceill/just-the-docs
