@@ -31,3 +31,7 @@ remote_theme: pmarsceill/just-the-docs
 aux_links:
   "Joomlashack":
     - "https://joomlashack.com"
+aux_links_new_tab: true
+
+footer_content: "Copyright &copy; 2020 Joomlashack. License <a href=\"https://www.gnu.org/licenses/gpl.html\" target=\"_blank\">GPL</a>"
+
