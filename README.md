@@ -1,1 +1,0 @@
-## Joomlashack Developer Documentation
