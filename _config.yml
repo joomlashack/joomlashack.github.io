@@ -20,8 +20,6 @@
 
 title: Joomlashack Development
 logo: /assets/images/2019-jslogo_circle.png
-#baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://joomlashack.com"
 
 # Build settings
 remote_theme: pmarsceill/just-the-docs
