@@ -30,7 +30,8 @@ twitter_username: joomlashack
 github_username:  joomlashack
 
 # Build settings
-theme: minima
+#theme: minima
+theme: just-the-docs
 plugins:
   - jekyll-feed
 
