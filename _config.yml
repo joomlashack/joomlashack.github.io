@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Joomlashack Developers
-#logo: /assets/images/2019-jslogo.png
+title: Joomlashack Development
+logo: /assets/images/2019-jslogo_circle.png
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "https://joomlashack.com" # the base hostname & protocol for your site, e.g. http://example.com
 
