@@ -18,28 +18,7 @@ include, but are not limited to:
 * PSR-1 Class namespace required
 * PSR-1 Class names in PascalCase
 
-## Autoloading
-_NOTE: This description refers to code that is currently in major flux.
-We are transitioning to a new Joomlashack deployment system from our original
-Alledia deployment system. The general principles have not changed only the
-reference to repositories currently in development._
-
-Joomlashack uses an in-house
-[AutoLoader class](https://github.com/joomlashack/ShackInstaller/blob/main/src/library/joomlashack/Installer/AutoLoader.php)
-to handle both autoloading scenarios described below.
-
-### PSR-4
-In our own frameworks and independent code that is not restricted by
-Joomla conventions and standards, we adhere to the
-[PSR-4 Autoloader](https://www.php-fig.org/psr/psr-4/) standards. This is
-implemented with with the `AutoLoader::register()` method.
-
-### Joomla subclasses
-In some of our extensions, we implement a subclassing system that provides
-easy overriding of core Joomla classes with a camelCase oriented autoloading
-convention. This is implemented with the `AutoLoader::registerCamelBase()` method.
-
-### Comments
+## Comments
 
 Comments are encouraged when they help to bring attention to a block of
 code or what the code is doing is not obvious. Overly obvious comments are
@@ -66,3 +45,23 @@ indicated with:
         ...
     }
 ```
+## Autoloading
+_NOTE: This description refers to code that is currently in major flux.
+We are transitioning to a new Joomlashack deployment system from our original
+Alledia deployment system. The general principles have not changed only the
+reference to repositories currently in development._
+
+Joomlashack uses an in-house
+[AutoLoader class](https://github.com/joomlashack/ShackInstaller/blob/main/src/library/joomlashack/Installer/AutoLoader.php)
+to handle both autoloading scenarios described below.
+
+### PSR-4
+In our own frameworks and independent code that is not restricted by
+Joomla conventions and standards, we adhere to the
+[PSR-4 Autoloader](https://www.php-fig.org/psr/psr-4/) standards. This is
+implemented with with the `AutoLoader::register()` method.
+
+### Joomla subclasses
+In some of our extensions, we implement a subclassing system that provides
+easy overriding of core Joomla classes with a camelCase oriented autoloading
+convention. This is implemented with the `AutoLoader::registerCamelBase()` method.
