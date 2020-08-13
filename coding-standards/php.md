@@ -1,9 +1,12 @@
 ---
 layout: default
-title: PHP Coding Standards
+title: PHP
 parent: Coding Standards
+permalink: coding-standards/php
 nav_order: 1
 ---
+
+# PHP Coding Standards
 
 We have adopted [PSR-12](https://www.php-fig.org/psr/psr-12/) as much
 as is possible, In the context of Joomla conventions some standards are
