@@ -9,8 +9,8 @@ nav_order: 1
 # PHP Coding Standards
 
 We have adopted [PSR-12](https://www.php-fig.org/psr/psr-12/) as much
-as is possible, In the context of Joomla conventions some standards are
-almost required to be broken. Allowing these exceptions is highly dependent
+as is possible. In the context of Joomla conventions, it is almost required
+to break some of these standards. Allowing these exceptions is highly dependent
 on the context of the Joomlashack code in question. Typical exceptions
 include, but are not limited to:
 
