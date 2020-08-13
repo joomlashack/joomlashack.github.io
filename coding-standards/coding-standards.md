@@ -3,6 +3,7 @@ layout: default
 title: Coding Standards
 nav_order: 2
 has_children: true
+permalink: /coding-standards
 ---
 
 We always strive for consistency in our code. This can be a challenge

@@ -1,8 +1,8 @@
 ---
 layout: default
 title: PHP Coding Standards
+parent: Coding Standards
 nav_order: 1
-has_children: false
 ---
 
 We have adopted [PSR-12](https://www.php-fig.org/psr/psr-12/) as much
