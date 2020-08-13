@@ -11,7 +11,7 @@ permalink: /coding-standards
 We always strive for consistency in our code. This can be a challenge
 due to the wide range of developers we've acquired our code from and its
 history. The standards we adhere to are mainly laid out in the
-[php](php) document.
+[php](/coding-standards/php) document.
 
 ## JavaScript
   * [Crockford JS Coding Standards](https://www.crockford.com/code.html)

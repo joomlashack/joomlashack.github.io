@@ -2,7 +2,7 @@
 layout: default
 title: PHP
 parent: Coding Standards
-permalink: coding-standards/php
+permalink: /coding-standards/php
 nav_order: 1
 ---
 
