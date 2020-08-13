@@ -35,9 +35,9 @@ Joomla conventions and standards, we adhere to the
 implemented with with the `AutoLoader::register()` method.
 
 ### Joomla subclasses
-For code that inherits from or represents super classes of Joomla core
-classes, we have created a camelCase autoload convention implemented by
-the `AutoLoader::registerCamelBase` method
+In some of our extensions, we implement a subclassing system that provides
+easy overriding of core Joomla classes with a camelCase oriented autoloading
+convention. This is implemented with the `AutoLoader::registerCamelBase()` method.
 
 ### Comments
 
