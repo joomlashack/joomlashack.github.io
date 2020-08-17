@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Joomla Specific Standards
+title: Joomla
 parent: Coding Standards
 permalink: /coding-standards/joomla
 nav_order: 2
@@ -24,4 +24,4 @@ use Joomla\CMS\Factory;
 $db = Factory::getDbo();
 ```
 You can find a list of the changed classnames here
-[libraries/classmap](joomla/joomla-cms/blob/staging/libraries/classmap.php)
+[libraries/classmap](/joomla/joomla-cms/blob/staging/libraries/classmap.php)
