@@ -25,3 +25,10 @@ $db = Factory::getDbo();
 ```
 You can find a list of the changed classnames here
 [libraries/classmap](/joomla/joomla-cms/blob/staging/libraries/classmap.php)
+
+## Localized Language Files
+Translation files should not be implemented using the `<language>` tag.
+We keep all language files localized into the extension itself. There
+should be a properly structured language folder that is included as
+a folder in the extension manifest. See the discussion in the Joomla!
+documentation - [Manifest Language Files](https://docs.joomla.org/Manifest_files#Language_files)
