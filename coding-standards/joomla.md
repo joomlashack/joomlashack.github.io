@@ -32,3 +32,17 @@ We keep all language files localized into the extension itself. There
 should be a properly structured language folder that is included as
 a folder in the extension manifest. See the discussion in the Joomla!
 documentation - [Manifest Language Files](https://docs.joomla.org/Manifest_files#Language_files)
+
+## Database Class Chaining
+When creating and using database queries, use the chaining features as follows:
+```php
+$db = Factory::getDbo();
+
+$query = $db->getQuery(true)
+    ->select('od.id, od.name, od.cate_id')
+    ->from('#__osdownloads_documents as od')
+    ->where('od.published = 1')
+    ->order('od.id DESC');
+
+$rows = $db->setQuery($query)->loadObjectList();
+```
