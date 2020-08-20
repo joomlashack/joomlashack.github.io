@@ -13,7 +13,7 @@ with any new code and to make adjustments in any existing code.
 If you wish to contribute, please review the [coding standards](/coding-standards)
 linked in the menu at the left.
 
-Note that we have acquired much of our code from a wide variety of developers,
-you will see quite a lot of severe violations of our standards. We continually
+Note that we have acquired much of our code from a wide variety of developers.
+You will see quite a lot of severe violations of our standards. We continually
 work to correct these issues as much as possible whenever we create patches
 for existing code.
