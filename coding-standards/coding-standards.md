@@ -4,16 +4,9 @@ title: Coding Standards
 nav_order: 2
 has_children: true
 permalink: /coding-standards
-has_toc: false
 ---
 
 # Coding Standards
-
-{: .no_toc}
-1. TOC
-{:toc}
-
-## Overview
 We always strive for consistency in our code. This can be a challenge
 due to the wide range of developers we've acquired our code from and its
 history. The standards we adhere to are mainly laid out in the
