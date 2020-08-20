@@ -7,7 +7,12 @@ nav_order: 1
 ---
 
 # PHP Coding Standards
+{: .no_toc}
 
+1. TOC
+{:toc}
+
+## Overview
 We have adopted [PSR-12](https://www.php-fig.org/psr/psr-12/) as much
 as is possible. In the context of Joomla conventions, it is almost required
 to break some of these standards. Allowing these exceptions is highly dependent
@@ -19,7 +24,6 @@ include, but are not limited to:
 * PSR-1 Class names in PascalCase
 
 ## Comments
-
 Comments are encouraged when they help to bring attention to a block of
 code or what the code is doing is not obvious. Overly obvious comments are
 discouraged. For example:
