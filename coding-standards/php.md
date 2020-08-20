@@ -15,13 +15,18 @@ nav_order: 1
 ## Overview
 We have adopted [PSR-12](https://www.php-fig.org/psr/psr-12/) as much
 as is possible. In the context of Joomla conventions, it is almost required
-to break some of these standards. Allowing these exceptions is highly dependent
-on the context of the Joomlashack code in question. Typical exceptions
-include, but are not limited to:
+to break some of these standards. Exceptions are permitted when there is no
+alternative. For example, when overriding a Joomla parent class or method.
+Typical exceptions include, but are not limited to:
 
-* PSR-1 Side Effects
+* PSR-1 Side Effects must not mix with declaration
 * PSR-1 Class namespace required
 * PSR-1 Class names in PascalCase
+* PSR-1 Method/Property names in camelCase
+* PSR-2 Method/Property names must not start with '_'
+
+## Joomlashack Additions
+* Always use array short syntax. e.g. `$a = ['key' => 'value'];`
 
 ## Comments
 Comments are encouraged when they help to bring attention to a block of
