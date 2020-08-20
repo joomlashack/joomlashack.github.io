@@ -7,6 +7,10 @@ nav_order: 2
 ---
 
 # Joomla Specific Standards
+{: .no_toc}
+
+1. TOC
+{:toc}
 
 ## Joomla 3.8+ class references
 We support Joomla only as far back as Joomla! v3.9.x. This means we
