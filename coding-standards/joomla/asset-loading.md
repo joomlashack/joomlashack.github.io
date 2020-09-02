@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Asset Loading
+grand_parent: Coding Standards
 parent: Joomla
 has_children: false
 permalink: /coding-standards/joomla/asset-loading
