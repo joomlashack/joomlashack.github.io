@@ -15,7 +15,7 @@ permalink: /licensing
 We license all our extensions and templates under GPL v2 and higher.
 All php and ini files in our extensions should use the texts below as file headers.
 
-## php
+## PHP Files
 ```php
 /**
  * @package   ${PROJECT_NAME}
@@ -40,7 +40,7 @@ All php and ini files in our extensions should use the texts below as file heade
  */
 ```
 
-## .ini Files
+## INI Files
 ```ini
 ; @package   ${PROJECT_NAME}
 ; @contact   www.joomlashack.com, help@joomlashack.com
