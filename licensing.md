@@ -7,14 +7,13 @@ permalink: /licensing
 ---
 
 # License Text Templates
-
-We license all our extensions and templates under GPL v2 and higher.
-All php and ini files in our extensions should use the texts below as file headers.
-
 {: .no_toc}
 
 1. TOC
 {:toc}
+
+We license all our extensions and templates under GPL v2 and higher.
+All php and ini files in our extensions should use the texts below as file headers.
 
 ## php
 ```php
