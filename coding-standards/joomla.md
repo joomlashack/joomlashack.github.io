@@ -2,6 +2,7 @@
 layout: default
 title: Joomla
 parent: Coding Standards
+has_childrend: true
 permalink: /coding-standards/joomla
 nav_order: 2
 ---
