@@ -21,15 +21,15 @@ unless there is a specific architectural reason why it shouldn’t
 When extension core assets are in the correct media folder for its type and
 loaded properly using Joomla core methods, the following overrides will work
 
-|Type|Source|Override
-|---|---|---
-|image|/media/&lt;EXTENSION&gt;/images|/templates/&lt;TEMPLATE&gt;/images/&lt;EXTENSION&gt;
-|stylesheet|/media/&lt;EXTENSION&gt;/css|/templates/&lt;TEMPLATE&gt;/css/&lt;EXTENSION&gt;
-|script|/media/&lt;EXTENSION&gt;/js|/templates/&lt;TEMPLATE&gt;/js/&lt;EXTENSION&gt;
-|layouts|/components/&lt;COMPONENT&gt;/layouts|/templates/&lt;TEMPLATE&gt;/html/layouts/&lt;COMPONENT&gt;
-|views|/components/&lt;COMPONENT&gt;/VIEWS/&lt;VIEW&gt;/tmpl|/templates/&lt;TEMPLATE&gt;/html/&lt;COMPONENTS&gt;/&lt;VIEW&gt;
-|modules|/modules/&lt;MODULE&gt;/tmpl|/templates/&lt;TEMPLATE&gt;/html/&lt;MODULE&gt;
-|plugins|/plugins/&lt;FOLDER&gt;/&lt;PLUGIN&gt;/tmpl|/templates/&lt;TEMPLATE&gt;/html/plg_&lt;FOLDER&gt;_&lt;PLUGIN&gt;
+|Type|Source<br>Override
+|---|---
+|image|/media/&lt;EXTENSION&gt;/images<br>/templates/&lt;TEMPLATE&gt;/images/&lt;EXTENSION&gt;
+|stylesheet|/media/&lt;EXTENSION&gt;/css<br>/templates/&lt;TEMPLATE&gt;/css/&lt;EXTENSION&gt;
+|script|/media/&lt;EXTENSION&gt;/js<br>/templates/&lt;TEMPLATE&gt;/js/&lt;EXTENSION&gt;
+|layouts|/components/&lt;COMPONENT&gt;/layouts<br>/templates/&lt;TEMPLATE&gt;/html/layouts/&lt;COMPONENT&gt;
+|views|/components/&lt;COMPONENT&gt;/views/&lt;VIEW&gt;/tmpl<br>/templates/&lt;TEMPLATE&gt;/html/&lt;COMPONENTS&gt;/&lt;VIEW&gt;
+|modules|/modules/&lt;MODULE&gt;/tmpl<br>/templates/&lt;TEMPLATE&gt;/html/&lt;MODULE&gt;
+|plugins|/plugins/&lt;FOLDER&gt;/&lt;PLUGIN&gt;/tmpl<br>/templates/&lt;TEMPLATE&gt;/html/plg_&lt;FOLDER&gt;_&lt;PLUGIN&gt;
 
 There will be situations where some of these overrides won’t work. Either on purpose, for reasons
 of internal logic or often, due to programmer inattentiveness, lazy coding or overly tricky custom
