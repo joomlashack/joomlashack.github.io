@@ -11,11 +11,10 @@ nav_order: 1
 # Avoid Mootools Loading
 
 All our extensions should be reviewed for the following method calls 
-nd updated where needed and possible to ensure mootools no longer gets
-loaded by our extensions/templates. This doesn't guarantee mootools won't
-be loaded since other extensions may still do so anyway.
+nd updated where possible to ensure mootools no longer gets loaded by
+our extensions/templates.
 
-The methods on the left will load mootools as a by product and should be replaced
+The methods on the left will load mootools as a side effect and should be replaced
 with the methods on the right
 
 Also note the change in class name. `JHtml` should be replaced with 
