@@ -24,7 +24,7 @@ the presence of `use Joomla\CMS\HTML\HTMLHelper;` at the top of the file
 as per PSR-12 standards. See [Joomla 3.8+ class references](/coding-standards/joomla#joomla-38-class-references)
 for more information on Joomla class references.
 
-<table valign="top">
+<table>
     <tr>
        <th>Old Method</th>
        <th>Replacement</th>
