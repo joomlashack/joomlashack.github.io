@@ -33,6 +33,14 @@ for more information on Joomla class references.
         <td>HTMLHelper::_(‘jquery.framework’)</td>
     </tr>
     <tr>
+        <td>
+            JHtml::_('behavior.tree')
+        </td>
+        <td>
+            <em>No known replacement</em>
+        </td>
+    </tr>
+    <tr>
         <th colspan="2">Panel Sliders</th>
     </tr>
     <tr>
@@ -64,20 +72,10 @@ for more information on Joomla class references.
     </tr>
     <tr>
         <td>
-            JHtml::_(‘tooltip’)<sup>*</sup>
+            JHtml::_(‘behavior.tooltip’)
         </td>
         <td>
             HTMLHelper::_(‘bootstrap.tooltip’)<br>
-            HTMLHelper::_(‘behavior.tooltip’)
-        </td>
-    </tr>
-    <tr>
-        <td>
-            JHtml::_(‘tooltipText’)
-        </td>
-        <td>
-            This is likely not used much. But if the <em>title::content</em>
-            format (uses the double colon) is used, mootools rules are expected.
         </td>
     </tr>
     <tr>
@@ -103,7 +101,16 @@ for more information on Joomla class references.
             HTMLHelper::_(‘jgrid.*’)
         </td>
     </tr>
+    <tr>
+        <th colspan="2">Forms</th>
+    </tr>
+    <tr>
+        <td>
+            JHtml::_('behavior.formvalidation')
+        </td>
+        <td>
+            HTMLHelper::_('behavior.formvalidator');
+        </td>
+    </tr>
+    
 </table>
-
-<sup>*</sup>_tooltip_ will load mootools if the 7th argument (class) is set to _hasTip_.
-The default is _hasTooltip_.  
