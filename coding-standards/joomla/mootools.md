@@ -24,7 +24,7 @@ the presence of `use Joomla\CMS\HTML\HTMLHelper;` at the top of the file
 as per PSR-12 standards. See [Joomla 3.8+ class references](/coding-standards/joomla#joomla-38-class-references)
 for more information on Joomla class references.
 
-<table>
+<table valign="top">
     <tr>
        <th>Old Method</th>
        <th>Replacement</th>
@@ -41,7 +41,7 @@ for more information on Joomla class references.
             JHtml::_(‘sliders.start’)<br>
             JHtml::_(‘sliders.panel’)<br>
             JHtml::_(‘sliders.end’)</td>
-        <td style="vertical-align: top">
+        <td>
             HTMLHelper::_(‘bootstrap.addSlide’)<br>
             HTMLHelper::_(‘boostrap.endSlide’)
         </td>
