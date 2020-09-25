@@ -91,17 +91,6 @@ for more information on Joomla class references.
         </td>
     </tr>
     <tr>
-        <th colspan="2">Grid Displays</th>
-    </tr>
-    <tr>
-        <td>
-            JHtml::_(‘grid.*’)
-        </td>
-        <td>
-            HTMLHelper::_(‘jgrid.*’)
-        </td>
-    </tr>
-    <tr>
         <th colspan="2">Forms</th>
     </tr>
     <tr>
