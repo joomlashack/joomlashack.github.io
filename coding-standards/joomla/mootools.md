@@ -84,7 +84,7 @@ for more information on Joomla class references.
     <tr>
         <td>
             JHtml::_(‘behavior.modal’)<br>
-            JHtml::_(‘bootstrap.modal’)
+            JHtml::_(‘bootstrap.modal’)<sup>●</sup>
         </td>
         <td>
             HTMLHelper::_(‘bootstrap.renderModal’)
@@ -103,3 +103,7 @@ for more information on Joomla class references.
     </tr>
     
 </table>
+
+<sup>●</sup>While `bootstrap.modal` doesn't load mootools, it's
+included here because it has been deprecated and should be replaced
+with `bootstrap.renderModal`.
