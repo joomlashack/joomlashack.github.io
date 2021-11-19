@@ -6,6 +6,8 @@ has_children: false
 permalink: /tips
 ---
 
+# Coding Tips
+
 ### Joomla: Querying for a category and all it's subcategories
 Joomla nests tables using a parent_id column and lft/rgt columns to maintain the hierarchy.
 Here is a simple query to retrieve the category &lt;CategoryId&gt; and all it descendent categories.
@@ -13,5 +15,5 @@ Here is a simple query to retrieve the category &lt;CategoryId&gt; and all it de
 ```sql
 SELECT tree.*
 FROM #__categories AS tree, #__categories AS parent 
-WHERE tree.lft BETWEEN parent.lft AND parent.rgt AND parent.id = &lt;CategoryId&gt;;
+WHERE tree.lft BETWEEN parent.lft AND parent.rgt AND parent.id = <CategoryId>;
 ```
