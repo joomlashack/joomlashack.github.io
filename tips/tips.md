@@ -8,7 +8,8 @@ permalink: /tips
 
 # Coding Tips
 
-### Joomla: Querying for a category and all it's subcategories
+## Joomla
+### Querying for a category and all it's subcategories
 Joomla nests tables using a parent_id column and lft/rgt columns to maintain the hierarchy.
 Here is a simple query to retrieve the category &lt;CategoryId&gt; and all it descendent categories.
 
