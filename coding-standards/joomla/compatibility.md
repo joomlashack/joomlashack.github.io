@@ -17,6 +17,9 @@ We have implemented view classes in our Joomlashack Framework that can choose te
 on the Joomla version. For example, in list views, `default.j3.php` will be loaded in Joomla 3
 while `default.php` will be loaded by Joomla 4.
 
+Note that subtemplate names for Joomla 3 may seem a bit odd, but do make a certain kind of sense:
+`default.j3_subtemplate.php`
+
 Admin view classes should inherit from one of these two framework classes:
 * Alledia\Framework\Joomla\View\Admin\AbstractList
 * Alledia\Framework\Joomla\View\Admin\AbstractForm
@@ -34,7 +37,7 @@ class OsmapFormFieldMenus extends FormField
 }
 ```
 This will automatically look for either `osmap/menus_j3.php` or `osmap/menus.php` in a `layouts`
-folder in the same directory as the form field file defining the custom form.
+folder in the same directory as the class file defining the custom form field.
 
 ### Joomla 4 layouts
 Joomla 4 now implements special layouts via the 'layouts' tag in the form manifest file. To provide
