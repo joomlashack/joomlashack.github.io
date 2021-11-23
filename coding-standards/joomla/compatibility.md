@@ -97,6 +97,7 @@ the same behaviors in Joomla 3 and Joomla 4, use the following markup that will 
         <th>Joomla 3</th>
         <th>Joomla 4</th>
     </tr>
+    <tr>
         <td>Sliders</td>
         <td colspan="2">
             HTMLHelper::_('bootstrap.startAccordion')<br>
