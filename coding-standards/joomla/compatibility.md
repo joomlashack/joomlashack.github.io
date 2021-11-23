@@ -104,7 +104,7 @@ the same behaviors in Joomla 3 and Joomla 4, use the following markup that will 
             HTMLHelper::_(‘bootstrap.addSlide’)<br>
             HTMLHelper::_(‘boostrap.endSlide’)
         </td>
-    <tr>
+    </tr>
     <tr>
         <td>Tabs</td>
         <td>
