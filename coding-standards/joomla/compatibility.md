@@ -9,8 +9,6 @@ nav_order: 3
 ---
 
 # Joomla 3 & 4 Compatibility
-{: .no_toc}
-
 1. TOC
    {:toc}
 
