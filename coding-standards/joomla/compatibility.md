@@ -9,6 +9,11 @@ nav_order: 3
 ---
 
 # Joomla 3 & 4 Compatibility
+{: .no_toc}
+
+1. TOC
+   {:toc}
+
 These are the ways we've found to provide extensions that are compatible with
 both Joomla 3.9+ and Joomla 4.
 
