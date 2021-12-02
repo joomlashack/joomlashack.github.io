@@ -10,7 +10,7 @@ nav_order: 3
 
 # Joomla 3 & 4 Compatibility
 1. TOC
-   {:toc}
+{:toc}
 
 ## Administration Templates
 We have implemented view classes in our Joomlashack Framework that can choose templates based 
