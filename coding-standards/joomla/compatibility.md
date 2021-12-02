@@ -106,7 +106,7 @@ the same behaviors in Joomla 3 and Joomla 4, use the following markup that will 
         <th>Joomla 4</th>
     </tr>
     <tr>
-        <td>Sliders</td>
+        <th>Sliders</th>
         <td colspan="2">
             HTMLHelper::_('bootstrap.startAccordion')<br>
             HTMLHelper::_(‘bootstrap.addSlide’)<br>
@@ -114,7 +114,7 @@ the same behaviors in Joomla 3 and Joomla 4, use the following markup that will 
         </td>
     </tr>
     <tr>
-        <td>Tabs</td>
+        <th>Tabs</th>
         <td>
         HTMLHelper::_(‘bootstrap.startTabSet’)<br>
         HTMLHelper::_(‘bootstrap.addTab’)<br>
@@ -129,7 +129,7 @@ the same behaviors in Joomla 3 and Joomla 4, use the following markup that will 
         </td>
     </tr>
     <tr>
-        <td>Tooltips</td>
+        <th>Tooltips</th>
         <td colspan="2">
             HTMLHelper::_('bootstrap.tooltip', '.hasTooltip')<br>
             J4 does not default the selector. Our framework provides a
@@ -138,7 +138,7 @@ the same behaviors in Joomla 3 and Joomla 4, use the following markup that will 
         </td>
     </tr>
     <tr>
-        <td>Modal Popups</td>
+        <th>Modal Popups</th>
         <td colspan="2">
             There are numerous differences between J3 and J4. We've created
             a Joomla version agnostic modal helper:<br><br>
