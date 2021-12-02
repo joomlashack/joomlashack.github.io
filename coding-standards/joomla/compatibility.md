@@ -14,9 +14,6 @@ nav_order: 3
 1. TOC
    {:toc}
 
-These are the ways we've found to provide extensions that are compatible with
-both Joomla 3.9+ and Joomla 4.
-
 ## Administration Templates
 We have implemented view classes in our Joomlashack Framework that can choose templates based 
 on the Joomla version. For example, in list views, `default.j3.php` will be loaded in Joomla 3
