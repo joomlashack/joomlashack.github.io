@@ -98,7 +98,7 @@ the same behaviors in Joomla 3 and Joomla 4, use the following markup that will 
     </tr>
 </table>
 
-## Tabs, Sliders, Tooltips and Modals
+## Sliders, Tabs, Tooltips and Modals
 <table>
     <tr>
         <th>Structure</th>
@@ -147,5 +147,8 @@ the same behaviors in Joomla 3 and Joomla 4, use the following markup that will 
         </td>        
     </tr>
 </table>
+
+## Sortable Elements
+Documentation in progress
 
 
