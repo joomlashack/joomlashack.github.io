@@ -193,10 +193,11 @@ HTMLHelper::_(
 </pre>
 **Notes:**
 <ol>
-<li>`sortablelist` requires the ajax url for saving order changes. We've used the current url
+<li><em><strong>sortablelist</strong></em> requires the ajax url for saving order changes. We've used the current url
 in this example, which would be entirely useless in a real implementation.</li>
-<li>No additional markup is required in the table beyond the `sortable-handler` element.</li>
-<li>Use `sortable-group-id="&lt;ID&gt;"` attribute on &lt;tr&gt; tags to limit sorting to a subset of the table rows.</li>
+<li>No additional markup is required in the table beyond the <em><strong>sortable-handler</strong></em> element.</li>
+<li>Use <em><strong>sortable-group-id="&lt;ID&gt;"</strong></em> attribute on &lt;tr&gt; tags to limit sorting
+to a subset of the table rows.</li>
 </ol>
 </td>
         <td style="vertical-align: top;">
@@ -209,10 +210,11 @@ HTMLHelper::_(
 </pre>
 **Notes:**
 <ol>
-<li>The only markup required to make this work is the addition of `js-draggable`
+<li>The only markup required to make this work is the addition of <em><strong>js-draggable</strong></em>
 to the &lt;tbody&gt; element of the table.</li>
-<li>Use `data-draggable-group="&lt;ID&gt;"` attribute on &lt;tr&gt; tags to limit sorting to a subset of rows.</li>
-<li>The `sortable-handler` element is ignored. The entire row becomes the handler.</li>
+<li>Use <em><strong>data-draggable-group="&lt;ID&gt;"</strong></em> attribute on &lt;tr&gt; tags to
+limit sorting to a subset of rows.</li>
+<li>The <em><strong>sortable-handler</strong></em> element is ignored. The entire row becomes the handler.</li>
 </ol>
 </td>
     </tr>
