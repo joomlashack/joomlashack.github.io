@@ -148,7 +148,70 @@ the same behaviors in Joomla 3 and Joomla 4, use the following markup that will 
     </tr>
 </table>
 
-## Sortable Elements
-Documentation in progress
+## Sortable Tables
+Given an array:
+```php
+$items = ['ONE', 'TWO', 'THREE', 'FOUR'];
+```
 
+The following html markup can be used for both J3 and J4:
+```html
+<form id="form-test">
+    <table id="table-sort">
+        <tbody class="js-draggable">
+        <?php foreach ($items as $row => $item) : ?>
+        <tr>
+            <td>
+                <span class="sortable-handler">
+                    <i class="icon-menu"></i>
+                </span>
+            </td>
+            <td>
+                <?php echo $item; ?>
+            </td>
+        </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+</form>
+```
+<table>
+    <tr>
+        <th style="width: 50%;">Joomla 3</th>
+        <th style="width: 50%;">Joomla 4</th>
+    </tr>
+    <tr>
+        <td style="vertical-align: top;">
 
+```php
+HTMLHelper::_(
+    'sortablelist.sortable',
+    'table-sort',
+    'form-test',
+    'asc',
+    Joomla\CMS\Uri\Uri::current()
+);
+```
+**Notes:**
+1. `sortablelist` requires the ajax url for saving order changes. We've used the current url
+in this example, which would be entirely useless in a real implementation.
+2. No additional markup is required in the table beyond the `sortable-handler` element.
+3. Use `sortable-group-id="<ID>"` attribute on &lt;tr&gt; tags to limit sorting to a subset of the table rows.
+</td>
+        <td style="vertical-align: top;">
+
+```php
+HTMLHelper::_(
+    'draggablelist.draggable',
+    'table-sort',
+    'form-test'
+);
+```
+**Notes:**
+1. The only markup required to make this work is the addition of `js-draggable`
+to the &lt;tbody&gt; element of the table.
+2. Use `data-draggable-group="<ID>"` attribute on &lt;tr&gt; tags to limit sorting to a subset of rows.
+3. The `sortable-handler` element is ignored. The entire row becomes the handler.
+</td>
+    </tr>
+</table>
