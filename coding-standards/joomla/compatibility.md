@@ -44,8 +44,8 @@ class OsmapFormFieldMenus extends FormField
 This will automatically look for either `osmap/menus_j3.php` or `osmap/menus.php` in a `layouts`
 folder in the same directory as the class file defining the custom form field.
 
-### Joomla 4 layouts
-Joomla 4 now implements special layouts via the 'layouts' tag in the form manifest file. To provide
+### Joomla 4 layout attribute
+Joomla 4 now implements special layouts via the 'layout' attribute of the &lt;field&gt; tag. To provide
 the same behaviors in Joomla 3 and Joomla 4, use the following markup that will work in both Joomlas.
 <table>
     <tr>
