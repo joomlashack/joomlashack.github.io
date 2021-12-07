@@ -182,8 +182,7 @@ The following html markup can be used for both J3 and J4:
     </tr>
     <tr>
         <td style="vertical-align: top;">
-
-```php
+<pre>
 HTMLHelper::_(
     'sortablelist.sortable',
     'table-sort',
@@ -191,27 +190,30 @@ HTMLHelper::_(
     'asc',
     Joomla\CMS\Uri\Uri::current()
 );
-```
+</pre>
 **Notes:**
-1. `sortablelist` requires the ajax url for saving order changes. We've used the current url
-in this example, which would be entirely useless in a real implementation.
-2. No additional markup is required in the table beyond the `sortable-handler` element.
-3. Use `sortable-group-id="<ID>"` attribute on &lt;tr&gt; tags to limit sorting to a subset of the table rows.
+<ol>
+<li>`sortablelist` requires the ajax url for saving order changes. We've used the current url
+in this example, which would be entirely useless in a real implementation.</li>
+<li>No additional markup is required in the table beyond the `sortable-handler` element.</li>
+<li>Use `sortable-group-id="&lt;ID&gt;"` attribute on &lt;tr&gt; tags to limit sorting to a subset of the table rows.</li>
+</ol>
 </td>
         <td style="vertical-align: top;">
-
-```php
+<pre>
 HTMLHelper::_(
     'draggablelist.draggable',
     'table-sort',
     'form-test'
 );
-```
+</pre>
 **Notes:**
-1. The only markup required to make this work is the addition of `js-draggable`
-to the &lt;tbody&gt; element of the table.
-2. Use `data-draggable-group="<ID>"` attribute on &lt;tr&gt; tags to limit sorting to a subset of rows.
-3. The `sortable-handler` element is ignored. The entire row becomes the handler.
+<ol>
+<li>The only markup required to make this work is the addition of `js-draggable`
+to the &lt;tbody&gt; element of the table.</li>
+<li>Use `data-draggable-group="&lt;ID&gt;"` attribute on &lt;tr&gt; tags to limit sorting to a subset of rows.</li>
+<li>The `sortable-handler` element is ignored. The entire row becomes the handler.</li>
+</ol>
 </td>
     </tr>
 </table>
