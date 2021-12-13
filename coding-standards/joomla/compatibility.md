@@ -154,13 +154,29 @@ Given an array:
 $items = ['ONE', 'TWO', 'THREE', 'FOUR'];
 ```
 
-The following html markup can be used for both J3 and J4:
+### Joomla 3
+
+To initialize the table:
+
+```php
+HTMLHelper::_(
+    'sortablelist.sortable',
+    'table-sort',
+    'form-test',
+    'asc',
+    Joomla\CMS\Uri\Uri::current()
+);
+```
+
+For this table markup:
+
 ```html
+
 <form id="form-test">
     <table id="table-sort">
-        <tbody class="js-draggable">
+        <tbody>
         <?php foreach ($items as $row => $item) : ?>
-        <tr>
+        <tr sortable-group-id="&lt;ID&gt;">
             <td>
                 <span class="sortable-handler">
                     <i class="icon-menu"></i>
@@ -175,47 +191,64 @@ The following html markup can be used for both J3 and J4:
     </table>
 </form>
 ```
-<table>
-    <tr>
-        <th style="width: 50%;">Joomla 3</th>
-        <th style="width: 50%;">Joomla 4</th>
-    </tr>
-    <tr>
-        <td style="vertical-align: top;">
-<pre>
-HTMLHelper::_(
-    'sortablelist.sortable',
-    'table-sort',
-    'form-test',
-    'asc',
-    Joomla\CMS\Uri\Uri::current()
-);
-</pre>
+
 **Notes:**
 <ol>
 <li><em><strong>sortablelist</strong></em> requires the ajax url for saving order changes. We've used the current url
 in this example, which would be entirely useless in a real implementation.</li>
 <li>No additional markup is required in the table beyond the <em><strong>sortable-handler</strong></em> element.</li>
-<li>Use <em><strong>sortable-group-id="&lt;ID&gt;"</strong></em> attribute on &lt;tr&gt; tags to limit sorting
+<li>Optionally use <em><strong>sortable-group-id="&lt;ID&gt;"</strong></em> attribute on &lt;tr&gt; tags to limit sorting
 to a subset of the table rows.</li>
 </ol>
-</td>
-        <td style="vertical-align: top;">
-<pre>
-HTMLHelper::_(
-    'draggablelist.draggable',
-    'table-sort',
-    'form-test'
-);
-</pre>
+
+### Joomla 4
+
+The setup:
+
+```php
+HTMLHelper::_('draggablelist.draggable');
+```
+
+The table:
+```html
+
+<table>
+    <tbody class="js-draggable"
+           data-url="&lt;Ajax Ordering url&gt;"
+           data-direction="asc"
+           data-nested="true">
+    <?php foreach ($items as $row => $item) : ?>
+    <tr data-draggable-group="&lt;ID&gt;">
+        <td>
+            <span class="sortable-handler">
+                <i class="icon-menu"></i>
+            </span>
+        </td>
+        <td>
+            <?php echo $item; ?>
+        </td>
+    </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>
+```
+
 **Notes:**
 <ol>
-<li>The only markup required to make this work is the addition of <em><strong>js-draggable</strong></em>
-to the &lt;tbody&gt; element of the table.</li>
-<li>Use <em><strong>data-draggable-group="&lt;ID&gt;"</strong></em> attribute on &lt;tr&gt; tags to
-limit sorting to a subset of rows.</li>
-<li>The <em><strong>sortable-handler</strong></em> element is ignored. The entire row becomes the handler.</li>
+<li>
+    The only markup required to make this work is the addition of <em><strong>js-draggable</strong></em>
+    to the &lt;tbody&gt; element of the table.
+</li>
+<li>
+    The <em><strong>sortable-handler</strong></em> element is only needed as a convenience. The entire row
+    becomes the handler.
+</li>
+<li>
+    <em><strong>data-url</strong></em> and <em><strong>data-direction</strong></em> are required for saving
+    changes after dropping a moved element
+</li>
+<li>
+    <em><strong>data-nested</strong></em> and <em><strong>data-draggable-group</strong></em> are only needed
+    when dragging/sorting need to be limited to a subgroup. e.g. items in the same category.
+</li>
 </ol>
-</td>
-    </tr>
-</table>
