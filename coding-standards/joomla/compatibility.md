@@ -75,7 +75,7 @@ the same behaviors in Joomla 3 and Joomla 4, use the following markup that will 
         <td>
             <pre>
 &lt;field type="list"
-      class="chzn-color chzn-color-state form-select-color-state"&gt;
+       class="chzn-color chzn-color-state form-select-color-state"&gt;
     &lt;option value="0"&gt;zero text&lt;/option&gt;
     &lt;option value="1"&gt;one text&lt;/option&gt;
     ...
