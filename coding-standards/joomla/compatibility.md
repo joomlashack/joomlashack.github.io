@@ -94,6 +94,11 @@ the same behaviors in Joomla 3 and Joomla 4, use the following markup that will 
 &lt;field type="list"
        layout="joomla.form.field.list-fancy-select"/&gt;
             </pre>
+            For grouped lists: 
+            <pre>
+&lt;field type="list"
+       layout="joomla.form.field.groupedlist-fancy-select"/&gt;
+            </pre>
         </td>
     </tr>
 </table>
